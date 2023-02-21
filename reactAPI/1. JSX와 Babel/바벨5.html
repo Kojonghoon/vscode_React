@@ -26,10 +26,11 @@
     </style>
     <script type="text/babel">
       const rootElement = document.querySelector("#root");
-      const subject ="React";
+      const subject = "React";
       const 클래스이름 = "title";
-      const props ={className : 클래스이름, children:subject}
-      const 사용자정의태그 =<h1{...props}/>;
+      const props = { className: 클래스이름, children: subject };
+      //스프레드 연산자 사용함
+      const 사용자정의태그 = <h1 {...props} />;
       ReactDOM.createRoot(rootElement).render(사용자정의태그);
     </script>
   </body>
